@@ -6,7 +6,7 @@ Android class model generation, including SQLite Database methods, based on a ra
 
 This console application takes a raw formatted single JSON object as an input, and generates the following as output:
 
-- Simple POJO with proper value types (`Integer`, `String`, `Double`, `Boolean`) and naming standards (camelCase).
+- Simple class definition with proper value types (`Integer`, `String`, `Double`, `Boolean`) and naming standards (camelCase).
 - SQLite Database support, with common methods definition (`addObj()`, `getObj()`, `getList()`)
 - Able to set up a custom entity ID, in order to properly generate a `getObjById()` method.
 - Able to define the name filter JSON field, in order to properly generate the `getObj()`'s method `whereClause`
@@ -49,5 +49,5 @@ java -jar JSONParser-Android-3.0.2.jar
 
 ## [1.0.0] - 2018-01-16
 ### Added
-- Generate a POJO class from a raw formatted JSON object.
+- Generate a Java class from a raw formatted JSON object.
 - This CHANGELOG section.
